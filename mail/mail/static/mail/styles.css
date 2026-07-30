@@ -1,0 +1,158 @@
+textarea {
+    min-height: 400px;
+}
+
+#container {
+    display: grid;
+    grid-auto-columns: 15% 30% auto;
+    grid-auto-rows: 100px auto;
+    grid-template-areas: "logo logo logo"
+        "but msgs msgs";
+    width: 100%;
+    padding-right: 0;
+    margin-right: 0;
+    padding-left: 10px;
+    margin-left: 0;
+}
+
+h2 {
+    grid-area: logo;
+    margin-top: 15px;
+    color: #166e6a;
+}
+
+#h1 {
+    color: #69a69e;
+}
+
+#butt {
+    grid-area: but;
+    width: 139%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px;
+
+    margin-top: 10px;
+}
+
+#butt::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 210px;
+    width: 2px;
+    background-color: #166e6a;
+    color: #166e6a;
+    height: 100%;
+}
+
+.btn-outline-primary {
+    width: 72%;
+    border-color: white;
+    border-bottom: solid 2px #166e6a;
+    color: #69a69e;
+}
+
+#e-inbox,
+#s-inbox,
+#a-inbox {
+    grid-area: msgs;
+    margin-top: 8px;
+}
+
+
+p {
+    display: inline;
+    padding: 0;
+    margin-right: 10px;
+}
+
+
+#chiled,
+#sent-m,
+#archiv-m {
+    background-color: white;
+    color: black;
+    width: 100%;
+    padding: 10px;
+    border-bottom: solid #69a69e 1px;
+    font-weight: 500;
+}
+
+.r-true {
+    background-color: whitesmoke !important;
+    font-weight: 200 !important;
+}
+
+#chiled:hover,
+#sent-m:hover,
+#archiv-m:hover,
+.r-true:hover {
+    cursor: pointer;
+    background-color: #69a69e !important;
+}
+
+#st {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -17px;
+}
+
+#content {
+    display: block;
+    width: 250%;
+    margin-left: 7%;
+    margin-top: 7%;
+}
+
+div#fline {
+    display: flex;
+    justify-content: space-between;
+}
+
+#fline::after {
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: #166e6a;
+    position: absolute;
+    top: 152px;
+}
+
+div#subject {
+    margin-top: 25px;
+}
+
+#bu {
+    margin-top: 20px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #166e6a;
+    border-color: #166e6a;
+    padding-bottom: 10px;
+}
+
+#archiv {
+    background-color: whitesmoke;
+    border-color: lightgray;
+    color: black;
+}
+
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color: #166e6a;
+    border-color: #166e6a;
+}
+
+div#compose-view {
+    width: 270%;
+    margin-left: 5%;
+}
+
+#login {
+    display: block;
+    margin-left: 5%;
+    margin-right: 10%;
+}
